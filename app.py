@@ -9,7 +9,7 @@ import cv2
 from PIL import Image
 import pickle
 
-app = Flask(__name__, template_folder='templates)
+app = Flask(__name__, template_folder='templates')
 
 # Load the VGG16 model
 with open('models/vgg16_model.pkl', 'rb') as n:
@@ -45,6 +45,8 @@ def predict(image_path):
 
 @app.route('/')
 def index():
+    # image_file = 'static/img/bf.webp'
+    # return render_template('index.html', image_file=image_file)
     return render_template('index.html')
 
 
