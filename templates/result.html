@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   </head>
   <body>
-    <h1>The uploaded image is classified as {{ result }}.</h1>
-    <img src="{{ image }}" width="400">
+     <center><h1>The uploaded image is classified as {{ result }}.</h1></center>
+    <img src="{{ image }}" width="400" class="center">
   </body>
 </html>
