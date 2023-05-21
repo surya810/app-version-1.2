@@ -14,7 +14,8 @@
         <h1>Skin Cancer Identification</h1>
         <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
             <input type="file" name="image" accept="image/*">
-            <input type="submit" value="Classify">
+            <input type="submit" class="button" role="button" value="Classify">
+
         </form>
         {% if prediction %}
         <h2>Prediction: {{ prediction }}</h2>
